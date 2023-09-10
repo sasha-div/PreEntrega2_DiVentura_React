@@ -1,7 +1,9 @@
-const ItemListContainer = ({ greeting }) => {
+import Cards from '../Cards/Cards';
+
+const ItemListContainer = () => {
     return (
         <>
-            <h1 className="h1-greeting-landing">{greeting}</h1>
+            <Cards />
         </>
     )
 }
