@@ -1,9 +1,21 @@
-import Cards from '../Cards/Cards';
+import { useState, useEffect } from 'react';
+import getProducts from '../getProducts';
+import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = () => {
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        getProducts()
+            .then((res) => {
+                setProducts(res);
+            })
+    }, [])
+
     return (
         <>
-            <Cards />
+            <ItemList products={products} />
         </>
     )
 }

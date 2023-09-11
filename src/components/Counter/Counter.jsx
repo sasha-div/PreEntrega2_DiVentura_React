@@ -25,7 +25,9 @@ export const Counter = () => {
                 <p>{number}</p>
                 <Button onClick={sumar} disabled={number === 10} variant="light">+</Button>
             </div>
-            <p className="d-flex justify-content-end pt-4">${price}</p>
+            <div className="d-flex align-items-end flex-column pt-2">
+                <p>${price}</p>
+            </div>
         </div>
     )
 }
