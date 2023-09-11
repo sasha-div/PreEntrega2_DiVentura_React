@@ -1,5 +1,5 @@
 
-import data from '../data/products.json'
+import data from '../data/products.json';
 
 const getProducts = () => {
     return new Promise((resolve, reject) => {

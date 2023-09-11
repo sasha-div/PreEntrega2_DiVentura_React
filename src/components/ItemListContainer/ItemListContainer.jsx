@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import getProducts from '../getProducts';
 import ItemList from '../ItemList/ItemList';
+import getProducts from '../getProducts';
+import { Container } from 'react-bootstrap';
 
 const ItemListContainer = () => {
 
@@ -14,10 +15,10 @@ const ItemListContainer = () => {
     }, [])
 
     return (
-        <>
+        <Container>
             <ItemList products={products} />
-        </>
+        </Container>
     )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
