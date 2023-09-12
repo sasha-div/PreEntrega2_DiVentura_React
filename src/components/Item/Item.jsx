@@ -1,4 +1,4 @@
-import { Counter } from '../Counter/Counter';
+import { ItemCounter } from '../ItemCounter/ItemCounter';
 import { Card, Col, Row } from 'react-bootstrap';
 
 const Item = ({ product }) => {
@@ -13,7 +13,7 @@ const Item = ({ product }) => {
                             <Card.Text>{product.description}
                             </Card.Text>
                         </Card.Body>
-                        <Counter />
+                        <ItemCounter initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada", quantity)} />
                     </Card>
                 </Col>
             </Row>
