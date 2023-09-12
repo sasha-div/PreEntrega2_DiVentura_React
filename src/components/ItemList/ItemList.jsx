@@ -3,16 +3,17 @@ import Item from '../Item/Item';
 const ItemList = ({ products }) => {
     return (
         <div>
-            <h2 className='mb-5'>Productos</h2>
-            {
-                products.length > 0 &&
-                products.map((product) => {
+            <div className='d-flex justify-content-center flex-wrap'>
+                {
+                    products.length > 0 &&
+                    products.map((product) => {
 
-                    return (
-                        <Item key={product.id} product={product} />
-                    )
-                })
-            }
+                        return (
+                            <Item key={product.id} product={product} />
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }

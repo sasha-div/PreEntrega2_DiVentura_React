@@ -19,7 +19,7 @@ const NavBar = () => {
                         64 Bits
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#inicio">Incio</Nav.Link>
+                        <Nav.Link href="#inicio">Inicio</Nav.Link>
                         <Nav.Link href="#productos">Productos</Nav.Link>
                         <Nav.Link href="#conocenos">Conócenos</Nav.Link>
                     </Nav>
