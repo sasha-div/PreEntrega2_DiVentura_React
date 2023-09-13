@@ -5,11 +5,12 @@ import './Item.css';
 const Item = ({ product }) => {
     return (
         <div className='itemCard'>
-            <Card style={{ width: '15rem', height: '34rem' }}>
+            <Card style={{ width: '15rem', height: '36rem' }}>
                 <Card.Img variant="top" src={product.img} />
                 <Card.Body>
                     <Card.Title>{product.title}</Card.Title>
-                    <Button className='itemDetailButton' variant='light' size="sm">Ver detalles</Button>
+                    <Card.Text>$ {product.price}</Card.Text>
+                    <Button variant='light' size="sm" href={`/item/${product.id}`}>Ver detalles</Button>
                 </Card.Body>
                 <ItemCounter initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada", quantity)} />
             </Card>

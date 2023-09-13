@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import getProducts from '../getProducts';
+import getProducts from '../../helpers/getProducts';
 import ItemList from '../ItemList/ItemList';
 import { Container } from 'react-bootstrap';
 
@@ -19,7 +19,6 @@ const ItemListContainer = () => {
 
     return (
         <Container>
-            <h1 className='my-5 d-flex justify-content-center'>Productos</h1>
             <ItemList products={products} />
         </Container>
     )
