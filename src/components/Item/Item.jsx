@@ -1,6 +1,7 @@
 import { ItemCounter } from '../ItemCounter/ItemCounter';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import './Item.css';
+import { Link } from 'react-router-dom';
 
 const Item = ({ product }) => {
     return (
@@ -10,7 +11,7 @@ const Item = ({ product }) => {
                 <Card.Body>
                     <Card.Title>{product.title}</Card.Title>
                     <Card.Text>$ {product.price}</Card.Text>
-                    <Button variant='light' size="sm" href={`/item/${product.id}`}>Ver detalles</Button>
+                    <Link to={`/products/${product.id}`} className="btn btn-light btn-sm">Ver detalles</Link>
                 </Card.Body>
                 <ItemCounter initial={1} stock={10} onAdd={(quantity) => console.log("Cantidad agregada", quantity)} />
             </Card>

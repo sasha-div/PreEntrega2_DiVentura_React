@@ -18,3 +18,12 @@ export const getProductById = (id) => {
 
     })
 }
+
+// export const getProductByPlatform = (platform) => {
+//     return new Promise((resolve, reject) => {
+//         const itemsByPlatform = data.filter((element) => element.platform === platform);
+
+//         itemsByPlatform.length > 0 ? resolve(itemsByPlatform) : reject({ error: "No se encontraron productos para esta plataforma :(" });
+
+//     })
+// }

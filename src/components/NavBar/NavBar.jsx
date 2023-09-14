@@ -2,13 +2,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <div>
             <Navbar bg="light" data-bs-theme="light">
                 <Container>
-                    <Navbar.Brand href="#home" className='me-5'>
+                    <Link to="/" className='navbar-brand me-5'>
                         <img
                             alt="logo"
                             src="https://i.ibb.co/SXTGCLJ/icon-logo.webp"
@@ -17,11 +18,14 @@ const NavBar = () => {
                             className="d-inline-block align-top me-3"
                         />
                         64 Bits
-                    </Navbar.Brand>
+                    </Link>
                     <Nav className="me-auto">
-                        <Nav.Link href="#inicio">Inicio</Nav.Link>
-                        <Nav.Link href="#productos">Productos</Nav.Link>
-                        <Nav.Link href="#conocenos">Conócenos</Nav.Link>
+                        <Link to="/" className='nav-link'>Inicio</Link>
+                        <Link to="/products" className='nav-link'>Productos</Link>
+                        <Link to="/products/ps4" className='nav-link'>PS4</Link>
+                        <Link to="/products/switch" className='nav-link'>SWITCH</Link>
+                        <Link to="/products/xbox" className='nav-link'>XBOX</Link>
+                        <Link to="/conocenos" className='nav-link'>Conócenos</Link>
                     </Nav>
                     <CartWidget />
                 </Container>
