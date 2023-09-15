@@ -22,9 +22,9 @@ const NavBar = () => {
                     <Nav className="me-auto">
                         <Link to="/" className='nav-link'>Inicio</Link>
                         <Link to="/products" className='nav-link'>Productos</Link>
-                        <Link to="/product/ps4" className='nav-link'>PS4</Link>
-                        <Link to="/product/switch" className='nav-link'>SWITCH</Link>
-                        <Link to="/product/xbox" className='nav-link'>XBOX</Link>
+                        <Link to="/product/PS4" className='nav-link'>PS4</Link>
+                        <Link to="/product/Switch" className='nav-link'>SWITCH</Link>
+                        <Link to="/product/Xbox" className='nav-link'>XBOX</Link>
                         <Link to="/conocenos" className='nav-link'>Conócenos</Link>
                     </Nav>
                     <CartWidget />
